@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LightDarkToggle from "./toggle/LightDarkToggle"
 
 const Header = () => {
     return (
@@ -7,7 +8,7 @@ const Header = () => {
                 <Link href={"/"}>Mind Boggling</Link>
                 <form className="hidden md:w-1/2 lg:w-1/3 mx-auto border rounded-lg border-purple-700 md:flex flex-row items-center justify-between">
                     <input
-                        className="w-full px-4 py-2 rounded-tl-lg rounded-bl-lg focus:outline-purple-500"
+                        className="w-full px-4 py-2 rounded-tl-lg rounded-bl-lg focus:outline-purple-500 dark:bg-gray-100"
                         type="email"
                         placeholder="Enter your email"
                     />
@@ -15,8 +16,8 @@ const Header = () => {
                         Subscribe
                     </button>
                 </form>
-                <nav>
-                    {/* TO ADD MENU OR LIGHT/DARK TOGGLE */}
+                <nav className="flex flex-row items-center gap-4">
+                    <LightDarkToggle />
                     <button>Sign in</button>
                 </nav>
             </div>
