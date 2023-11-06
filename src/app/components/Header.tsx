@@ -5,7 +5,7 @@ const Header = () => {
         <header className="px-6 py-4 border-b">
             <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
                 <Link href={"/"}>Mind Boggling</Link>
-                <form className="w-1/3 mx-auto border rounded-lg border-purple-700 flex flex-row items-center justify-between">
+                <form className="hidden md:w-1/2 lg:w-1/3 mx-auto border rounded-lg border-purple-700 md:flex flex-row items-center justify-between">
                     <input
                         className="w-full px-4 py-2 rounded-tl-lg rounded-bl-lg focus:outline-purple-500"
                         type="email"
