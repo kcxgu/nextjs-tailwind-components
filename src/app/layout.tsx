@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   const theme = getTheme();
   return (
-    <html lang="en" className={theme} style={{ colorScheme: theme }}>
+    <html lang="en" className={`scroll-smooth ${theme}`} style={{ colorScheme: theme }}>
       <body className={inter.className}>
         <LightDarkProvider>
           <Header />
