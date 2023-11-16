@@ -12,7 +12,7 @@ const componentsData = [
   },
   {
     name: "Simplest Pricing Plan",
-    link: ""
+    link: "https://github.com/kcxgu/nextjs-tailwind-components/tree/5b54d25491f397653fd5af9c62ed0354be9fda22"
   },
 ]
 

@@ -5,7 +5,8 @@ Next.js (TypeScript, App Router) + TailwindCSS Starter Components.
 2. Footer
 3. Light/Dark Toggle (next-themes)
 4. Landing Page
-
+5. Newsletter Subscription Page
+6. Pricing Plan Component
 
 ## Getting Started
 
