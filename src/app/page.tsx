@@ -29,7 +29,7 @@ const componentsData = [
   },
   {
     name: "Accordion FAQ",
-    link: ""
+    link: "https://github.com/kcxgu/nextjs-tailwind-components/tree/dc80d0da1ae22f0e28f817770602bfbfbed65c8e"
   },
 ]
 
