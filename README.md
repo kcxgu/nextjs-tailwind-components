@@ -7,6 +7,7 @@ Next.js (TypeScript, App Router) + TailwindCSS Starter Components.
 4. Landing Page
 5. Newsletter Subscription Page
 6. Pricing Plan Component
+7. Accordion FAQ Dropdown Items in FAQ Page
 
 ## Getting Started
 

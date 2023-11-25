@@ -1,6 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const pageData = [
+  {
+    relativePath: "/newsletter-subscription",
+    name: "Newsletter Subscription",
+    description: "Newsletter subscription page with box-shadow pricing table. For simpler pricing table:",
+  },
+  {
+    relativePath: "/faq",
+    name: "FAQ",
+    description: "Accordion FAQ dropdown list.",
+  },
+]
+
 const componentsData = [
   {
     name: "Header and Footer",
@@ -13,6 +26,10 @@ const componentsData = [
   {
     name: "Simplest Pricing Plan",
     link: "https://github.com/kcxgu/nextjs-tailwind-components/tree/5b54d25491f397653fd5af9c62ed0354be9fda22"
+  },
+  {
+    name: "Accordion FAQ",
+    link: ""
   },
 ]
 
@@ -68,21 +85,25 @@ export default function Home() {
       {/* LINK TO PAGES AND COMPONENTS */}
       <div className="max-w-7xl w-full mx-auto min-h-screen py-16 px-6 md:px-10 border-t dark:border-gray-600">
         <h2 id="pages" className="pt-24 pb-10 text-3xl font-semibold uppercase tracking-wide">Pages</h2>
-        <div className="max-w-md flex flex-col text-lg">
-          <Link
-            href={"/newsletter-subscription"}
-            className="pb-2 text-blue-600 font-medium underline underline-offset-2 text-xl hover:opacity-80"
-          >
-            Newsletter Subscription
-          </Link>
-          <p>Newsletter subscription page with box-shadow pricing table. For simpler pricing table, see
-            <Link
-              href={componentsData[2].link}
-              className="pl-1 text-orange-500 underline underline-offset-2 hover:opacity-80"
-            >
-              component
-            </Link>
-            .</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {pageData.map((data, i) =>
+            <div key={i} className="max-w-md flex flex-col text-lg">
+              <Link
+                href={data.relativePath}
+                className="pb-2 text-blue-600 font-medium underline underline-offset-2 text-xl hover:opacity-80"
+              >
+                {data.name}
+              </Link>
+              <p>{data.description} See
+                <Link
+                  href={componentsData[i + 2].link}
+                  className="pl-1 text-orange-500 underline underline-offset-2 hover:opacity-80"
+                >
+                  component
+                </Link>
+                .</p>
+            </div>
+          )}
         </div>
         <h2 id="components" className="pt-24 pb-10 text-3xl font-semibold uppercase tracking-wide">Components</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
